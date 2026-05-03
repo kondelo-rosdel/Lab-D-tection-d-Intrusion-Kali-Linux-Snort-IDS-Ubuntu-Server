@@ -194,12 +194,12 @@ nmap -sV -sC  -p 22 192.168.64.4
 
 **Résultat attendu :**
 
-#capture nmap-scan-result.png
+![Image Alt](https://github.com/kondelo-rosdel/Lab-D-tection-d-Intrusion-Kali-Linux-Snort-IDS-Ubuntu-Server/blob/9caa47cfb5026eb43dd532b3624741866a1192e0/nmap-scan-result.png)
 
 
 **Alertes Snort générées (terminal Ubuntu) :**
 
-#capture snort-alert-console.png
+![Image Alt](https://github.com/kondelo-rosdel/Lab-D-tection-d-Intrusion-Kali-Linux-Snort-IDS-Ubuntu-Server/blob/9caa47cfb5026eb43dd532b3624741866a1192e0/snort-alert-console.png)
 
 > 🔵 **Analyse Blue Team** : Snort identifie immédiatement l'origine du scan (`192.168.64.3`) et le service ciblé (port 22). L'horodatage précis permet une corrélation temporelle avec d'autres logs système.
 
@@ -237,8 +237,7 @@ hydra -l ubuntu -P wordlist.txt ssh://192.168.64.4 -t 4 -V -f
 
 **Alertes générées en temps réel :**
 
-#capture Hydra-bruteforce.png
-
+![Image Alt](https://github.com/kondelo-rosdel/Lab-D-tection-d-Intrusion-Kali-Linux-Snort-IDS-Ubuntu-Server/blob/9caa47cfb5026eb43dd532b3624741866a1192e0/hydra-bruteforce.png)
 
 ---
 
