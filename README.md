@@ -30,8 +30,8 @@ Ce home lab simule un scénario d'**intrusion réseau réaliste** entre deux mac
 
 | Rôle | Machine | OS | Outils |
 |---|---|---|---|
-| 🔴 Attaquant | VM Kali Linux | Kali Rolling | nmap · Hydra |
-| 🔵 Victime + IDS | VM Ubuntu Server | Ubuntu 22.04 LTS | Snort · OpenSSH · UFW · Fail2ban |
+| 🔴 Attaquant | Kali Linux | Kali Linux | nmap · Hydra |
+| 🔵 Victime + IDS | Ubuntu-Cible | Ubuntu 24.04 LTS | Snort · OpenSSH · UFW · Fail2ban |
 | 🖥️ Hyperviseur | Hôte | UTM (QEMU) | Réseau interne isolé |
 
 ---
@@ -50,7 +50,7 @@ Ce home lab simule un scénario d'**intrusion réseau réaliste** entre deux mac
 │   │                     │   │                          │ │
 │   │  ┌───────────────┐  │   │  ┌────────────────────┐  │ │
 │   │  │     nmap      │  │   │  │    Snort IDS       │  │ │
-│   │  │     Hydra     │  │   │  │  (écoute eth0)     │  │ │
+│   │  │     Hydra     │  │   │  │  (écoute enp0s1)   │  │ │
 │   │  └───────────────┘  │   │  ├────────────────────┤  │ │
 │   │                     │   │  │  OpenSSH (port 22) │  │ │
 │   └─────────────────────┘   │  └────────────────────┘  │ │
