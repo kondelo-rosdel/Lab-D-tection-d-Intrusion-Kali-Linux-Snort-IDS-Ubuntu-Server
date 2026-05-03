@@ -434,6 +434,7 @@ sudo tail -f /var/log/ufw.log                             # Voir les logs en tem
 <div align="center">
 
 *Projet personnel · Home Lab sécurité offensive & défensive · 2026*
+
 ⚠️ *Réalisé dans un environnement isolé à des fins éducatives uniquement.*
 
 </div>
